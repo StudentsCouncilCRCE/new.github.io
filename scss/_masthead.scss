@@ -8,7 +8,7 @@ header.masthead {
     background-position: center center;
     @include background-cover;
     .intro-text {
-        padding-top: 100px;
+        padding-top: 250px;
         padding-bottom: 50px;
         .intro-lead-in {
             font-size: 22px;
@@ -23,6 +23,12 @@ header.masthead {
             line-height: 50px;
             margin-bottom: 25px;
             @include heading-font;
+        }
+        .clogo {
+            float: left;
+        }
+        .slogo{
+            float: right;
         }
     }
 }
