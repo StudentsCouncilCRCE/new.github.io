@@ -24,14 +24,8 @@ header.masthead {
             margin-bottom: 25px;
             @include heading-font;
         }
-        .clogo {
-            float: left;
-        }
-        .slogo{
-            float: right;
-        }
     }
-}
+}    
 
 @media(min-width:768px) {
     header.masthead {
