@@ -510,7 +510,7 @@ ul.social-buttons {
     border-radius: 100%;
     outline: none;
     background-color: #222222; }
-    ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li a:active {
+      ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li a:active {
       background-color: #fed136; }
 
 .text-primary {
