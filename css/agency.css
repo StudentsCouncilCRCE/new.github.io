@@ -50,7 +50,10 @@ Custom Styling
 
 .card .card-content .card-title, .card-reveal .card-title{
     font-size: 24px;
-    font-weight: 200;    
+    font-weight: 200;
+    margin: auto; 
+    max-width: 300px;
+
 }
 
 .card .card-action{
@@ -96,6 +99,8 @@ Custom Styling
     background-color: transparent;
     font-size:18px;
 }
+
+.i-am-centered { margin: auto; max-width: 300px;}
 
 /*End of custom*/
 
