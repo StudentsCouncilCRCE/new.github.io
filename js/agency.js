@@ -15,16 +15,6 @@
         }
     });
 
-    //Custom
-
-    $('#show').on('click',function(){        
-        $('.card-reveal').slideToggle('slow');
-    });
-    
-    $('.card-reveal .close').on('click',function(){
-        $('.card-reveal').slideToggle('slow');
-    });
-
     // Activate scrollspy to add active class to navbar items on scroll
     $('body').scrollspy({
         target: '#mainNav',
