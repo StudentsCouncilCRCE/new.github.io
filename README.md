@@ -2,4 +2,4 @@
 
 The main hub for all Student Council activities and updates.
 
-# Designed and Developed by Ryan Dsilva
+### Designed and Developed by Ryan Dsilva
