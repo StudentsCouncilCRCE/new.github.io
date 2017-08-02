@@ -56,247 +56,322 @@
                 width: 100%;
             }
         }
+        /* Center the loader */
+
+        #loader {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            z-index: 1;
+            width: 150px;
+            height: 150px;
+            margin: -75px 0 0 -75px;
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #eaea20;
+            width: 120px;
+            height: 120px;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+        }
+
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        /* Add animation to "page content" */
+
+        .animate-bottom {
+            position: relative;
+            -webkit-animation-name: animatebottom;
+            -webkit-animation-duration: 1s;
+            animation-name: animatebottom;
+            animation-duration: 1s
+        }
+
+        @-webkit-keyframes animatebottom {
+            from {
+                bottom: -100px;
+                opacity: 0
+            }
+            to {
+                bottom: 0px;
+                opacity: 1
+            }
+        }
+
+        @keyframes animatebottom {
+            from {
+                bottom: -100px;
+                opacity: 0
+            }
+            to {
+                bottom: 0;
+                opacity: 1
+            }
+        }
+
+        #myDiv {
+            display: none;
+            text-align: center;
+        }
     </style>
 
 </head>
 
-<body id="page-top">
+<body id="page-top" onload="myFunction()" style="margin:0;">
+    <div id="loader"></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
 
-    <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse" id="mainNav">
-        <div class="container">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- Navigation -->
+        <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse" id="mainNav">
+            <div class="container">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand" href="#page-top">
+                <a class="navbar-brand" href="#page-top">
                 <img src="img/logo.png" width="45px" height="45px;" style="margin-top:-1px;">
             </a>
-            <a class="navbar-brand" href="#page-top">Students' Council</a>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#activities">Activities</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sports">Sports</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#team">Our Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Header -->
-    <header class="masthead">
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-heading animated bounce">Students' Council</div>
-                <div class="intro-lead-in animated bounce">Fr. Conceicao Rodrigues College Of Engineering</div>
-                <div><img src="img/logo.png" class="slogo animated bounceInUp" width="150px" height="auto"></div>
-                <a href="#upcoming_events" class="btn btn-xl">Upcoming Events</a>
-            </div>
-        </div>
-    </header>
-
-    <!-- Upcoming Events -->
-    <section id="upcoming_events">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Upcoming Events</h2>
-                    <h3 class="section-subheading text-muted">We've got some exciting stuff planned already!</h3>
-                </div>
-            </div>
-            <!-- Start Of timeline -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="timeline">
-                        <li>
-                            <div class="timeline-image">
-                                <img class="rounded-circle img-fluid" src="img/timeline/frday.jpg" alt="frday">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>4th August 2017</h4>
-                                    <h4 class="subheading">Friendship Day</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">One of the easiest ways to get points that go towards the Cultural Trophy!</p>
-                                </div>
-                            </div>
+                <a class="navbar-brand" href="#page-top">Students' Council</a>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="rounded-circle img-fluid" src="img/timeline/badminton.jpg" alt="badminton">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>August 2017</h4>
-                                    <h4 class="subheading">Intra-College Badminton</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Time to show off your shuttling skills!</p>
-                                </div>
-                            </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#activities">Activities</a>
                         </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <h4>Be Part
-                                    <br>Of Our
-                                    <br>Journey!</h4>
-                            </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sports">Sports</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team">Our Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <!-- End Of timeline -->
-        </div>
-    </section>
+        </nav>
 
-    <!-- Activities -->
-    <section class="bg-faded" id="activities">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Activities</h2>
-                    <h3 class="section-subheading text-muted">Lots of events in every domain!</h3>
+        <!-- Header -->
+        <header class="masthead">
+            <div class="container">
+                <div class="intro-text">
+                    <div class="intro-heading animated bounce">Students' Council</div>
+                    <div class="intro-lead-in animated bounce">Fr. Conceicao Rodrigues College Of Engineering</div>
+                    <div><img src="img/logo.png" class="slogo animated bounceInUp" width="150px" height="auto"></div>
+                    <a href="#upcoming_events" class="btn btn-xl">Upcoming Events</a>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3 class="section-heading">Cultural Activities</h3>
-                    <h4 class="section-subheading text-muted">For the ones who are always in the festive mode!</h4>
+        </header>
+
+
+        <!-- Upcoming Events -->
+        <section id="upcoming_events">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Upcoming Events</h2>
+                        <h3 class="section-subheading text-muted">We've got some exciting stuff planned already!</h3>
+                    </div>
+                </div>
+                <!-- Start Of timeline -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul class="timeline">
+                            <li>
+                                <div class="timeline-image">
+                                    <img class="rounded-circle img-fluid" src="img/timeline/frday.jpg" alt="frday">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>4th August 2017</h4>
+                                        <h4 class="subheading">Friendship Day</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">One of the easiest ways to get points that go towards the Cultural Trophy!</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-image">
+                                    <img class="rounded-circle img-fluid" src="img/timeline/badminton.jpg" alt="badminton">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>August 2017</h4>
+                                        <h4 class="subheading">Intra-College Badminton</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">Time to show off your shuttling skills!</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-image">
+                                    <h4>Be Part
+                                        <br>Of Our
+                                        <br>Journey!</h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Of timeline -->
+            </div>
+        </section>
+
+        <!-- Activities -->
+        <section class="bg-faded" id="activities">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Activities</h2>
+                        <h3 class="section-subheading text-muted">Lots of events in every domain!</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h3 class="section-heading">Cultural Activities</h3>
+                        <h4 class="section-subheading text-muted">For the ones who are always in the festive mode!</h4>
+                    </div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <div class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                            <img class="img-fluid" src="img/activities/yogaday-thumb.jpg" alt="yoga">
+                        </div>
+                        <br>
+                        <div class="portfolio-caption">
+                            <h4>Yoga Day</h4>
+                            <p class="text-muted">21st June 2017</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <div class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                            <img class="img-fluid" src="img/activities/frday-thumb.jpg" alt="frday">
+                        </div>
+                        <br>
+                        <div class="portfolio-caption">
+                            <h4>Friendship Day</h4>
+                            <p class="text-muted">4th August 2017</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <div class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                            <img class="img-fluid" src="img/activities/hoc-thumb.png" alt="hoc">
+                        </div>
+                        <br>
+                        <div class="portfolio-caption">
+                            <h4>Humans Of CRCE</h4>
+                            <p class="text-muted">Every voice is heard!</p>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
-            <br>
+        </section>
 
-            <div class="row">
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <div class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-                        <img class="img-fluid" src="img/activities/yogaday-thumb.jpg" alt="yoga">
-                    </div>
-                    <br>
-                    <div class="portfolio-caption">
-                        <h4>Yoga Day</h4>
-                        <p class="text-muted">21st June 2017</p>
+        <!-- Sports -->
+        <section id="sports">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Sports</h2>
+                        <h3 class="section-subheading text-muted">Who said engineers only study?</h3>
                     </div>
                 </div>
-
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <div class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-                        <img class="img-fluid" src="img/activities/frday-thumb.jpg" alt="frday">
-                    </div>
-                    <br>
-                    <div class="portfolio-caption">
-                        <h4>Friendship Day</h4>
-                        <p class="text-muted">4th August 2017</p>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <div class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-                        <img class="img-fluid" src="img/activities/hoc-thumb.png" alt="hoc">
-                    </div>
-                    <br>
-                    <div class="portfolio-caption">
-                        <h4>Humans Of CRCE</h4>
-                        <p class="text-muted">Every voice is heard!</p>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Sports -->
-    <section id="sports">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Sports</h2>
-                    <h3 class="section-subheading text-muted">Who said engineers only study?</h3>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-6">
-                    <span class="fa-stack fa-4x">
+                <div class="row text-center">
+                    <div class="col-md-6">
+                        <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <a href="intrasports.html">
                             <i class="fa fa-trophy fa-stack-1x fa-inverse animated infinite tada"></i>
                         </a>
                     </span>
-                    <h4 class="service-heading">Intra-College Sports</h4>
-                    <p class="text-muted">Who's gonna lift the class Sports Trophy?</p>
-                </div>
-                <div class="col-md-6 animated slideinRight">
-                    <span class="fa-stack fa-4x">
+                        <h4 class="service-heading">Intra-College Sports</h4>
+                        <p class="text-muted">Who's gonna lift the class Sports Trophy?</p>
+                    </div>
+                    <div class="col-md-6 animated slideinRight">
+                        <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <a href="athlos.html">
                             <i class="fa fa-futbol-o fa-stack-1x fa-inverse animated infinite tada"></i>
                         </a>
                     </span>
-                    <h4 class="service-heading">Inter-College Sports</h4>
-                    <p class="text-muted">Game On!</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team -->
-    <section class="bg-faded" id="team">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Our Team</h2>
-                    <h3 class="section-subheading text-muted">Guided By..</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="team-member animated fadeInLeft">
-                        <img class="mx-auto rounded-circle" src="img/team/Jerry.jpg" alt="Jerry">
-                        <h4>Jeremiah D'souza</h4>
-                        <p class="text-muted">President<br>BE Computers</p>
-                        <ul class="list-inline social-buttons">
-                            <li class="list-inline-item">
-                                <a href="https://www.facebook.com/Jerry.18d" target="blank"><i class="fa fa-facebook"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-sm-6">
-                    <div class="team-member animated fadeInRight">
-                        <img class="mx-auto rounded-circle" src="img/team/RyanF.png" alt="RyanF">
-                        <h4>Ryan Furtado</h4>
-                        <p class="text-muted">General Secretary<br>TE Computers</p>
-                        <ul class="list-inline social-buttons">
-                            <li class="list-inline-item">
-                                <a href="https://www.facebook.com/ryan.furtado2" target="blank"><i class="fa fa-facebook"></i></a>
-                            </li>
-                        </ul>
+                        <h4 class="service-heading">Inter-College Sports</h4>
+                        <p class="text-muted">Game On!</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-8 offset-lg-2 text-center">
-                <p class="large text-muted">But it takes a lot more than just indiviuals!</p>
-                <a href="aboutus.html" class="btn btn-xl animated infinite tada">Know our entire team!</a>
+        </section>
+
+        <!-- Team -->
+        <section class="bg-faded" id="team">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Our Team</h2>
+                        <h3 class="section-subheading text-muted">Guided By..</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="team-member animated fadeInLeft">
+                            <img class="mx-auto rounded-circle" src="img/team/Jerry.jpg" alt="Jerry">
+                            <h4>Jeremiah D'souza</h4>
+                            <p class="text-muted">President<br>BE Computers</p>
+                            <ul class="list-inline social-buttons">
+                                <li class="list-inline-item">
+                                    <a href="https://www.facebook.com/Jerry.18d" target="blank"><i class="fa fa-facebook"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="team-member animated fadeInRight">
+                            <img class="mx-auto rounded-circle" src="img/team/RyanF.png" alt="RyanF">
+                            <h4>Ryan Furtado</h4>
+                            <p class="text-muted">General Secretary<br>TE Computers</p>
+                            <ul class="list-inline social-buttons">
+                                <li class="list-inline-item">
+                                    <a href="https://www.facebook.com/ryan.furtado2" target="blank"><i class="fa fa-facebook"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        </div>
-    </section>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 text-center">
+                    <p class="large text-muted">But it takes a lot more than just indiviuals!</p>
+                    <a href="aboutus.html" class="btn btn-xl animated infinite tada">Know our entire team!</a>
+                </div>
+            </div>
+
+        </section>
 
     <!-- Contact -->
     <section id="contact">
@@ -349,6 +424,7 @@
         </div>
     </section>
 
+
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -378,7 +454,7 @@
             </div>
         </div>
     </footer>
-
+</div>
     <!-- Event Modals -->
 
     <!-- Modal 1 -->
@@ -451,10 +527,9 @@
                                 <p class="item-intro text-muted">Friends make college life fun, don't they ?</p>
                                 <img class="img-fluid d-block mx-auto" src="img/activities/frday-thumb.jpg" alt="frday">
                                 <p>
-                                    True friends will not have any reason for their friendship. 
-                                    So it can never be broken when they don't find that reason.<br>
-                                    Let's celebrate together and enjoy the many games and events including favourites like the Class Selfie and Fishpond!<br>
-                                    Events start at <strong> 4:30 pm </strong> and here are the details about all the games.<br><br>
+                                    True friends will not have any reason for their friendship. So it can never be broken when they don't find that reason.<br>                                    Let's celebrate together and enjoy the many games and events including favourites like
+                                    the Class Selfie and Fishpond!<br> Events start at <strong> 4:30 pm </strong> and here
+                                    are the details about all the games.<br><br>
                                     <a href="files/frday.pdf" target="blank">Game Details</a>
                                 </p>
                                 <ul class="list-inline">
@@ -534,6 +609,7 @@
         </div>
     </div>
 
+
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/tether/tether.min.js"></script>
@@ -560,6 +636,19 @@
         }
 
         preloadImages("img/header-bg.jpg");
+
+    </script>
+    <script>
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
 
     </script>
 
