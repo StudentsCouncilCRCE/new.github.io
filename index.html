@@ -38,7 +38,7 @@
             }
         }
 
-        
+
         section#upcoming_events {
             background-color: #b3bac6;
         }
@@ -51,8 +51,8 @@
             background-color: #d9dbe0;
         }
 
-         @media (max-width: 768px) {
-            body{
+        @media (max-width: 768px) {
+            body {
                 width: 100%;
             }
         }
@@ -236,7 +236,7 @@
                         </a>
                     </span>
                     <h4 class="service-heading">Intra-College Sports</h4>
-                    <p class="text-muted">Who's gonna lift the class Sports Trophy?</p> 
+                    <p class="text-muted">Who's gonna lift the class Sports Trophy?</p>
                 </div>
                 <div class="col-md-6 animated slideinRight">
                     <span class="fa-stack fa-4x">
@@ -451,7 +451,11 @@
                                 <p class="item-intro text-muted">Friends make college life fun, don't they ?</p>
                                 <img class="img-fluid d-block mx-auto" src="img/activities/frday-thumb.jpg" alt="frday">
                                 <p>
-                                    Lots of games and events including favourites like the Class Selfie and Fishpond!
+                                    True friends will not have any reason for their friendship. 
+                                    So it can never be broken when they don't find that reason.<br>
+                                    Let's celebrate together and enjoy the many games and events including favourites like the Class Selfie and Fishpond!<br>
+                                    Events start at <strong> 4:30 pm </strong> and here are the details about all the games.<br><br>
+                                    <a href="files/frday.pdf" target="blank">Game Details</a>
                                 </p>
                                 <ul class="list-inline">
                                     <li>Date: 4th August 2017</li>
@@ -487,7 +491,9 @@
                                     Humans Of CRCE catalogs the significant moments of our college, one story at a time!
                                 </p>
                                 <ul class="list-inline">
-                                    <li><h5><a href="https://www.facebook.com/humansofcrce/" >Facebook Page</a></h5></li>
+                                    <li>
+                                        <h5><a href="https://www.facebook.com/humansofcrce/">Facebook Page</a></h5>
+                                    </li>
                                 </ul>
                                 <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i>Close</button>
                             </div>
@@ -516,7 +522,9 @@
                                 <h2>Snapchat</h2>
                                 <p class="item-intro text-muted">Exciting stories coming your way!</p>
                                 <img class="img-fluid d-block mx-auto" src="img/scid.jpg" alt="SC">
-                                <p><h5><a href="https://www.snapchat.com/add/crcecouncil" target="blank">crcecouncil</a></h5></p>
+                                <p>
+                                    <h5><a href="https://www.snapchat.com/add/crcecouncil" target="blank">crcecouncil</a></h5>
+                                </p>
                                 <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i>Close</button>
                             </div>
                         </div>
@@ -536,6 +544,24 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
+    <script type="text/javascript">
+        var images = new Array();
+
+        function preloadImages() {
+
+            for (i = 0; i < preloadImages.arguments.length; i++) {
+
+                images[i] = new Image();
+
+                images[i].src = preloadImages.arguments[i];
+
+            }
+
+        }
+
+        preloadImages("img/header-bg.jpg");
+
+    </script>
 
 </body>
 
