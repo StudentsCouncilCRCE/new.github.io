@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=yes">
+    <meta name="description" content="Website of the Students' Council of Fr. Conceicao Rodrigues College of Engineering, Bandra.">
+    <meta name="author" content="Ryan Dsilva">
+
+    <title>Students' Council CRCE</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency.min.css" rel="stylesheet">
+
+    <!-- Temporary navbar container fix -->
+    <style>
+        .navbar-toggler {
+            z-index: 1;
+        }
+
+        @media (max-width: 576px) {
+            nav>.container {
+                width: 100%;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+
+        body {
+            background: #000;
+            color: #fff;
+            padding: 40px;
+            font-family: sans-serif;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .gallery {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        [class*='thumbnail-'] {
+            background: #000;
+            width: 33.33%;
+            height: auto;
+            float: left;
+            padding: 5px 5px 3px 5px;
+            cursor: zoom-in;
+        }
+
+        [class*='thumbnail-'] img {
+            max-width: 100%;
+        }
+
+        [class*='large-'] {
+            background: #000;
+            width: 90%;
+            margin: 0 auto;
+            padding: 30px;
+            display: none;
+        }
+
+        [class*='large-'] img {
+            width: 100%;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        .prev {
+            color: #fff;
+            font-size: 60px;
+            position: absolute;
+            top: 45%;
+            left: 10px;
+            float: left;
+        }
+
+        .next {
+            color: #fff;
+            font-size: 60px;
+            position: absolute;
+            top: 45%;
+            right: 10px;
+            float: right;
+        }
+
+        .close {
+            color: #fff;
+            font-size: 30px;
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            float: right;
+            cursor: zoom-out;
+        }
+
+        [class*='thumbnail-'] {
+            overflow: hidden;
+            padding: 0;
+            position: relative;
+            cursor: zoom-in;
+        }
+
+        [class*='thumbnail-']:hover img {
+            transition: .3s linear;
+            transition-delay: 300ms;
+            transform: /* rotate(5deg) */
+            scale(1.4);
+        }
+
+        [class*='thumbnail-']>.caption {
+            display: none;
+            position: absolute;
+            bottom: 0;
+            padding: 15px;
+            width: 100%;
+            background-color: black;
+            color: white;
+            opacity: 0.8;
+        }
+
+        [class*='thumbnail-']:hover>.caption {
+            display: block;
+        }
+
+        @media screen and (max-width:480px) {
+            .caption h3 {
+                font-size: 12px;
+            }
+        }
+    </style>
+
+</head>
+
+<body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse" id="mainNav">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" width="45px" height="45px;" style="margin-top : -1px;">
+            </a>
+            <a class="navbar-brand" href="index.html">Students' Council</a>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#activities">Activities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#sports">Sports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html/#team">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html/#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Of NavHead -->
+    <br>
+    <section>
+        <div class="gallery">
+            <div class="thumbnail-1 wow fadeInLeft">
+                <img src="http://lorempixel.com/output/city-q-c-640-480-9.jpg" alt="" />
+                <div class="caption">
+                    <h3 class="wow fadeInUp">San Francisco</h3>
+                </div>
+            </div>
+            <div class="large-1 wow bounceInLeft">
+                <img src="http://lorempixel.com/output/city-q-c-640-480-9.jpg" alt="" />
+                <span class="close">✕</span>
+            </div>
+            <div class="thumbnail-2 wow fadeInDown">
+                <img src="http://lorempixel.com/output/city-q-c-640-480-6.jpg" alt="" />
+                <div class="caption">
+                    <h3 class="wow fadeInUp">Paris</h3>
+                </div>
+            </div>
+            <div class="large-2 wow bounceInDown">
+                <img src="http://lorempixel.com/output/city-q-c-640-480-6.jpg" alt="" />
+                <span class="close">✕</span>
+            </div>
+            <div class="thumbnail-3 wow fadeInRight">
+                <img src="http://lorempixel.com/output/city-q-c-640-480-7.jpg" alt="" />
+                <div class="caption">
+                    <h3 class="wow fadeInUp">Sydney</h3>
+                </div>
+            </div>
+            <div class="large-3 wow bounceInRight">
+                <img src="http://lorempixel.com/output/city-q-c-640-480-7.jpg" alt="" />
+                <span class="close">✕</span>
+            </div>
+            <div class="thumbnail-4 wow fadeInLeft">
+                <img src="http://lorempixel.com/output/city-q-c-640-480-5.jpg" alt="" />
+                <div class="caption">
+                    <h3 class="wow fadeInUp">Tokyo</h3>
+                </div>
+            </div>
+            <div class="large-4 wow bounceInLeft">
+                <img src="http://lorempixel.com/output/city-q-c-640-480-5.jpg" alt="" />
+                <span class="close">✕</span>
+            </div>
+            <div class="thumbnail-5 wow flipInX">
+                <img src="http://lorempixel.com/output/city-q-c-640-480-1.jpg" alt="" />
+                <div class="caption">
+                    <h3 class="wow fadeInUp">Berlin</h3>
+                </div>
+            </div>
+            <div class="large-5 wow bounceIn">
+                <img src="http://lorempixel.com/output/city-q-c-640-480-1.jpg" alt="" />
+                <span class="close">✕</span>
+            </div>
+            <div class="thumbnail-6 wow fadeInRight">
+                <img src="http://lorempixel.com/output/city-q-c-640-480-4.jpg" alt="" />
+                <div class="caption">
+                    <h3 class="wow fadeInUp">New York</h3>
+                </div>
+            </div>
+            <div class="large-6 wow bounceInRight">
+                <img src="http://lorempixel.com/output/city-q-c-640-480-4.jpg" alt="" />
+                <span class="close">✕</span>
+            </div>
+            <div class="thumbnail-7 wow fadeInLeft">
+                <img src="http://lorempixel.com/output/city-q-c-640-480-3.jpg" alt="" />
+                <div class="caption">
+                    <h3 class="wow fadeInUp">New York</h3>
+                </div>
+            </div>
+            <div class="large-7 wow bounceInLeft">
+                <img src="http://lorempixel.com/output/city-q-c-640-480-3.jpg" alt="" />
+                <span class="close">✕</span>
+            </div>
+            <div class="thumbnail-8 wow fadeInUp">
+                <img src="http://lorempixel.com/output/city-q-c-640-480-2.jpg" alt="" />
+                <div class="caption">
+                    <h3 class="wow fadeInUp">New York</h3>
+                </div>
+            </div>
+            <div class="large-8 wow bounceInUp">
+                <img src="http://lorempixel.com/output/city-q-c-640-480-2.jpg" alt="" />
+                <span class="close">✕</span>
+            </div>
+            <div class="thumbnail-9 wow fadeInRight">
+                <img src="http://lorempixel.com/output/city-q-c-640-480-8.jpg" alt="" />
+                <div class="caption">
+                    <h3 class="wow fadeInUp">Brisbane</h3>
+                </div>
+            </div>
+            <div class="large-9 wow bounceInRight">
+                <img src="http://lorempixel.com/output/city-q-c-640-480-8.jpg" alt="" />
+                <span class="close">✕</span>
+            </div>
+        </div>
+    </section>
+    <br>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Students' Council 2017-2018</span>
+                </div>
+                <div class="col-md-4">
+                    <span class="copyright">Designed and Developed by Ryan D'silva</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li class="list-inline-item">
+                            <a href="index.html">HOME</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://en.wikipedia.org/wiki/Fr._Conceicao_Rodrigues_Memorial_Debate">CRMD</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="intrasports.html">IntraSports</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="aboutus.html">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/tether/tether.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("[class^='thumbnail-']").click(function () {
+                $("[class^='thumbnail-']").slideToggle("fast");
+                $(this).next("[class^='large-']").slideToggle();
+            });
+
+            $(".close").click(function () {
+                $("[class^='large-']:visible").toggle();
+                $("[class^='thumbnail-']").fadeToggle("fast");
+            });
+
+        });
+        new WOW().init();
+
+    </script>
+</body>
+
+</html>

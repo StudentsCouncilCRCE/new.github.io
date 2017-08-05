@@ -1,657 +1,641 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
+    <head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=yes">
-    <meta name="description" content="Website of the Students' Council of Fr. Conceicao Rodrigues College of Engineering, Bandra.">
-    <meta name="author" content="Ryan Dsilva">
-    <meta name="google-site-verification" content="pilOELL070g4ZRJuS4qyddt3hMPIQ0oSCaJTHxhDUw0" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=yes">
+        <meta name="description" content="Website of the Students' Council of Fr. Conceicao Rodrigues College of Engineering, Bandra.">
+        <meta name="author" content="Ryan Dsilva">
+        <meta name="google-site-verification" content="pilOELL070g4ZRJuS4qyddt3hMPIQ0oSCaJTHxhDUw0" />
 
-    <title>Students' Council CRCE</title>
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <title>Students' Council CRCE</title>
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+        <!-- Custom fonts for this template -->
+        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
-    <!-- Custom styles for this template -->
-    <link href="css/agency.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/user.css">
+        <!-- Custom styles for this template -->
+        <link href="css/agency.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/user.css">
 
-    <!-- Temporary navbar container fix -->
-    <style>
-        .navbar-toggler {
-            z-index: 1;
-        }
-
-        @media (max-width: 576px) {
-            nav>.container {
-                width: 100%;
+        <!-- Temporary navbar container fix -->
+        <style>
+            .navbar-toggler {
+                z-index: 1;
             }
-        }
 
-
-        section#upcoming_events {
-            background-color: #b3bac6;
-        }
-
-        section#team {
-            background-color: #c7ccd6;
-        }
-
-        section#activities {
-            background-color: #d9dbe0;
-        }
-
-        @media (max-width: 768px) {
-            body {
-                width: 100%;
+            @media (max-width: 576px) {
+                nav>.container {
+                    width: 100%;
+                }
             }
-        }
-        /* Center the loader */
 
-        #loader {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            z-index: 1;
-            width: 150px;
-            height: 150px;
-            margin: -75px 0 0 -75px;
-            border: 16px solid #f3f3f3;
-            border-radius: 50%;
-            border-top: 16px solid #eaea20;
-            width: 120px;
-            height: 120px;
-            -webkit-animation: spin 2s linear infinite;
-            animation: spin 2s linear infinite;
-        }
-
-        @-webkit-keyframes spin {
-            0% {
-                -webkit-transform: rotate(0deg);
+            section#upcoming_events {
+                background-color: #b3bac6;
             }
-            100% {
-                -webkit-transform: rotate(360deg);
+
+            section#team {
+                background-color: #c7ccd6;
             }
-        }
 
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
+            section#activities {
+                background-color: #d9dbe0;
             }
-            100% {
-                transform: rotate(360deg);
+
+            @media (max-width: 768px) {
+                body {
+                    width: 100%;
+                }
             }
-        }
-        /* Add animation to "page content" */
+            /* Center the loader */
 
-        .animate-bottom {
-            position: relative;
-            -webkit-animation-name: animatebottom;
-            -webkit-animation-duration: 1s;
-            animation-name: animatebottom;
-            animation-duration: 1s
-        }
-
-        @-webkit-keyframes animatebottom {
-            from {
-                bottom: -100px;
-                opacity: 0
+            #loader {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                z-index: 1;
+                width: 150px;
+                height: 150px;
+                margin: -75px 0 0 -75px;
+                border: 16px solid #f3f3f3;
+                border-radius: 50%;
+                border-top: 16px solid #eaea20;
+                width: 120px;
+                height: 120px;
+                -webkit-animation: spin 2s linear infinite;
+                animation: spin 2s linear infinite;
             }
-            to {
-                bottom: 0px;
-                opacity: 1
+
+            @-webkit-keyframes spin {
+                0% {
+                    -webkit-transform: rotate(0deg);
+                }
+                100% {
+                    -webkit-transform: rotate(360deg);
+                }
             }
-        }
 
-        @keyframes animatebottom {
-            from {
-                bottom: -100px;
-                opacity: 0
+            @keyframes spin {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
             }
-            to {
-                bottom: 0;
-                opacity: 1
+            /* Add animation to "page content" */
+
+            .animate-bottom {
+                position: relative;
+                -webkit-animation-name: animatebottom;
+                -webkit-animation-duration: 1s;
+                animation-name: animatebottom;
+                animation-duration: 1s
             }
-        }
 
-        #myDiv {
-            display: none;
-        }
-    </style>
+            @-webkit-keyframes animatebottom {
+                from {
+                    bottom: -100px;
+                    opacity: 0
+                }
+                to {
+                    bottom: 0px;
+                    opacity: 1
+                }
+            }
 
-</head>
+            @keyframes animatebottom {
+                from {
+                    bottom: -100px;
+                    opacity: 0
+                }
+                to {
+                    bottom: 0;
+                    opacity: 1
+                }
+            }
 
-<body id="page-top" onload="myFunction()" style="margin:0;">
-    <div id="loader"></div>
-    <div style="display:none;" id="myDiv" class="animate-bottom">
+            #myDiv {
+                display: none;
+            }
 
-        <!-- Navigation -->
-        <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse" id="mainNav">
-            <div class="container">
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu <i class="fa fa-bars"></i>
-            </button>
-                <a class="navbar-brand" href="#page-top">
-                <img src="img/logo.png" width="45px" height="45px;" style="margin-top:-1px;">
-            </a>
-                <a class="navbar-brand" href="#page-top">Students' Council</a>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#activities">Activities</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#sports">Sports</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#team">Our Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        </style>
 
-        <!-- Header -->
-        <header class="masthead">
-            <div class="container">
-                <div class="intro-text">
-                    <div class="intro-heading animated bounce">Students' Council</div>
-                    <div class="intro-lead-in animated bounce">Fr. Conceicao Rodrigues College Of Engineering</div>
-                    <div><img src="img/logo.png" class="slogo animated bounceInUp" width="150px" height="auto"></div>
-                    <a href="#upcoming_events" class="btn btn-xl">Upcoming Events</a>
-                </div>
-            </div>
-        </header>
+    </head>
 
+    <body id="page-top" onload="myFunction()" style="margin:0;">
+        <div id="loader"></div>
+        <div style="display:none;" id="myDiv" class="animate-bottom">
 
-        <!-- Upcoming Events -->
-        <section id="upcoming_events">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Upcoming Events</h2>
-                        <h3 class="section-subheading text-muted">We've got some exciting stuff planned already!</h3>
-                    </div>
-                </div>
-                <!-- Start Of timeline -->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <ul class="timeline">
-                            <li>
-                                <div class="timeline-image">
-                                    <img class="rounded-circle img-fluid" src="img/timeline/frday.jpg" alt="frday">
-                                </div>
-                                <div class="timeline-panel">
-                                    <div class="timeline-heading">
-                                        <h4>4th August 2017</h4>
-                                        <h4 class="subheading">Friendship Day</h4>
-                                    </div>
-                                    <div class="timeline-body">
-                                        <p class="text-muted">One of the easiest ways to get points that go towards the Cultural Trophy!</p>
-                                    </div>
-                                </div>
+            <!-- Navigation -->
+            <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse" id="mainNav">
+                <div class="container">
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                    <a class="navbar-brand" href="#page-top">
+                        <img src="img/logo.png" width="45px" height="45px;" style="margin-top:-1px;">
+                    </a>
+                    <a class="navbar-brand" href="#page-top">Students' Council</a>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
                             </li>
-                            <li class="timeline-inverted">
-                                <div class="timeline-image">
-                                    <img class="rounded-circle img-fluid" src="img/timeline/badminton.jpg" alt="badminton">
-                                </div>
-                                <div class="timeline-panel">
-                                    <div class="timeline-heading">
-                                        <h4>August 2017</h4>
-                                        <h4 class="subheading">Intra-College Badminton</h4>
-                                    </div>
-                                    <div class="timeline-body">
-                                        <p class="text-muted">Time to show off your shuttling skills!</p>
-                                    </div>
-                                </div>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#activities">Activities</a>
                             </li>
-                            <li class="timeline-inverted">
-                                <div class="timeline-image">
-                                    <h4>Be Part
-                                        <br>Of Our
-                                        <br>Journey!</h4>
-                                </div>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#sports">Sports</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#team">Our Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <!-- End Of timeline -->
-            </div>
-        </section>
+            </nav>
 
-        <!-- Activities -->
-        <section class="bg-faded" id="activities">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Activities</h2>
-                        <h3 class="section-subheading text-muted">Lots of events in every domain!</h3>
+            <!-- Header -->
+            <header class="masthead">
+                <div class="container">
+                    <div class="intro-text">
+                        <div class="intro-heading animated bounce">Students' Council</div>
+                        <div class="intro-lead-in animated bounce">Fr. Conceicao Rodrigues College Of Engineering</div>
+                        <div><img src="img/logo.png" class="slogo animated bounceInUp" width="150px" height="auto"></div>
+                        <!--<a href="frday.html" class="btn btn-xl">Click here to vote for class selfies!</a><br><br><br> -->
+                        <a href="#upcoming_events" class="btn btn-xl">Upcoming Events</a>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h3 class="section-heading">Cultural Activities</h3>
-                        <h4 class="section-subheading text-muted">For the ones who are always in the festive mode!</h4>
-                    </div>
-                </div>
-                <br>
+            </header>
 
-                <div class="row">
-                    <div class="col-md-4 col-sm-6 portfolio-item">
-                        <div class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-                            <img class="img-fluid" src="img/activities/yogaday-thumb.jpg" alt="yoga">
-                        </div>
-                        <br>
-                        <div class="portfolio-caption">
-                            <h4>Yoga Day</h4>
-                            <p class="text-muted">21st June 2017</p>
+
+            <!-- Upcoming Events -->
+            <section id="upcoming_events">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h2 class="section-heading">Upcoming Events</h2>
+                            <h3 class="section-subheading text-muted">We've got some exciting stuff planned already!</h3>
                         </div>
                     </div>
-
-                    <div class="col-md-4 col-sm-6 portfolio-item">
-                        <div class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-                            <img class="img-fluid" src="img/activities/frday-thumb.jpg" alt="frday">
-                        </div>
-                        <br>
-                        <div class="portfolio-caption">
-                            <h4>Friendship Day</h4>
-                            <p class="text-muted">4th August 2017</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6 portfolio-item">
-                        <div class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-                            <img class="img-fluid" src="img/activities/hoc-thumb.png" alt="hoc">
-                        </div>
-                        <br>
-                        <div class="portfolio-caption">
-                            <h4>Humans Of CRCE</h4>
-                            <p class="text-muted">Every voice is heard!</p>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Sports -->
-        <section id="sports">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Sports</h2>
-                        <h3 class="section-subheading text-muted">Who said engineers only study?</h3>
-                    </div>
-                </div>
-                <div class="row text-center">
-                    <div class="col-md-6">
-                        <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <a href="intrasports.html">
-                            <i class="fa fa-trophy fa-stack-1x fa-inverse animated infinite tada"></i>
-                        </a>
-                    </span>
-                        <h4 class="service-heading">Intra-College Sports</h4>
-                        <p class="text-muted">Who's gonna lift the class Sports Trophy?</p>
-                    </div>
-                    <div class="col-md-6 animated slideinRight">
-                        <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <a href="athlos.html">
-                            <i class="fa fa-futbol-o fa-stack-1x fa-inverse animated infinite tada"></i>
-                        </a>
-                    </span>
-                        <h4 class="service-heading">Inter-College Sports</h4>
-                        <p class="text-muted">Game On!</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Team -->
-        <section class="bg-faded" id="team">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Our Team</h2>
-                        <h3 class="section-subheading text-muted">Guided By..</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="team-member animated fadeInLeft">
-                            <img class="mx-auto rounded-circle" src="img/team/Jerry.jpg" alt="Jerry">
-                            <h4>Jeremiah D'souza</h4>
-                            <p class="text-muted">President<br>BE Computers</p>
-                            <ul class="list-inline social-buttons">
-                                <li class="list-inline-item">
-                                    <a href="https://www.facebook.com/Jerry.18d" target="blank"><i class="fa fa-facebook"></i></a>
+                    <!-- Start Of timeline -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ul class="timeline">
+                                <li>
+                                    <div class="timeline-image">
+                                        <img class="rounded-circle img-fluid" src="img/timeline/frday.jpg" alt="frday">
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4>4th August 2017</h4>
+                                            <h4 class="subheading">Friendship Day</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p class="text-muted">One of the easiest ways to get points that go towards the Cultural Trophy!</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-inverted">
+                                    <div class="timeline-image">
+                                        <img class="rounded-circle img-fluid" src="img/timeline/badminton.jpg" alt="badminton">
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4>August 2017</h4>
+                                            <h4 class="subheading">Intra-College Badminton</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p class="text-muted">Time to show off your shuttling skills!</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-inverted">
+                                    <div class="timeline-image">
+                                        <h4>Be Part
+                                            <br>Of Our
+                                            <br>Journey!</h4>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
                     </div>
+                    <!-- End Of timeline -->
+                </div>
+            </section>
 
-                    <div class="col-sm-6">
-                        <div class="team-member animated fadeInRight">
-                            <img class="mx-auto rounded-circle" src="img/team/RyanF.png" alt="RyanF">
-                            <h4>Ryan Furtado</h4>
-                            <p class="text-muted">General Secretary<br>TE Computers</p>
-                            <ul class="list-inline social-buttons">
-                                <li class="list-inline-item">
-                                    <a href="https://www.facebook.com/ryan.furtado2" target="blank"><i class="fa fa-facebook"></i></a>
-                                </li>
-                            </ul>
+            <!-- Activities -->
+            <section class="bg-faded" id="activities" name="activities">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h2 class="section-heading">Activities</h2>
+                            <h3 class="section-subheading text-muted">Lots of events in every domain!</h3>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2 text-center">
-                    <p class="large text-muted">But it takes a lot more than just indiviuals!</p>
-                    <a href="aboutus.html" class="btn btn-xl animated infinite tada">Know our entire team!</a>
-                </div>
-            </div>
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h3 class="section-heading">Cultural Activities</h3>
+                            <h4 class="section-subheading text-muted">For the ones who are always in the festive mode!</h4>
+                        </div>
+                    </div>
+                    <br>
 
-        </section>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 portfolio-item">
+                            <div class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                                <img class="img-fluid" src="img/activities/yogaday-thumb.jpg" alt="yoga">
+                            </div>
+                            <br>
+                            <div class="portfolio-caption">
+                                <h4>Yoga Day</h4>
+                                <p class="text-muted">21st June 2017</p>
+                            </div>
+                        </div>
 
-    <!-- Contact -->
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center ">
-                    <h2 class="section-heading">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Drop us a mail at <strong>crce.council@gmail.com</strong><br>
-                        <br><br>Follow us on all platforms!</h3>
+                        <div class="col-md-4 col-sm-6 portfolio-item">
+                            <div class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                                <img class="img-fluid" src="img/activities/frday-thumb.jpg" alt="frday">
+                            </div>
+                            <br>
+                            <div class="portfolio-caption">
+                                <h4>Friendship Day</h4>
+                                <p class="text-muted">4th August 2017</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 portfolio-item">
+                            <div class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                                <img class="img-fluid" src="img/activities/hoc-thumb.png" alt="hoc">
+                            </div>
+                            <br>
+                            <div class="portfolio-caption">
+                                <h4>Humans Of CRCE</h4>
+                                <p class="text-muted">Every voice is heard!</p>
+                            </div>
+                        </div>
+
+
+                    </div>
                 </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-sm-3 col-xs-3">
-                    <ul class="social-icons animated bounceInLeft">
-                        <li>
-                            <a href="https://www.facebook.com/frcrce.studentscouncil" target="blank">
-                                <img border="0" alt="Facebook" target="blank" src="img/icons/fb.png" width="75" height="75">
+            </section>
+
+            <!-- Sports -->
+            <section id="sports" name="sports">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h2 class="section-heading">Sports</h2>
+                            <h3 class="section-subheading text-muted">Who said engineers only study?</h3>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-6">
+                            <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <a href="intrasports.html">
+                                <i class="fa fa-trophy fa-stack-1x fa-inverse animated infinite tada"></i>
                             </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-3 col-xs-3">
-                    <ul class="social-icons animated bounceInDown">
-                        <li>
-                            <a href="https://www.youtube.com/channel/UCYDYa6njIVhimmdVe_UewhQ" target="blank">
-                        <img border="0" alt="Youtube" target="blank" src="img/icons/yt.png" width="75" height="75">
-                    </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-3 col-xs-3">
-                    <ul class="social-icons animated bounceInUp">
-                        <li>
-                            <a href="https://www.instagram.com/frcrce_bandra/" target="blank">
-                        <img border="0" alt="Instragram" target="blank" src="img/icons/ig.png" width="75" height="75">
-                    </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-3 col-xs-3">
-                    <ul class="social-icons animated bounceInRight">
-                        <li>
-                            <div class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-                                <img border="0" alt="Snapchat" src="img/icons/sc.png" width="75" height="75">
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Students' Council 2017-2018</span>
-                </div>
-                <div class="col-md-4">
-                    <span class="copyright">Designed and Developed by Ryan D'silva</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li class="list-inline-item">
-                            <a href="index.html">HOME</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="https://en.wikipedia.org/wiki/Fr._Conceicao_Rodrigues_Memorial_Debate" target="blank">CRMD</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="intrasports.html">IntraSports</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="http://fragmag2k17.com/" target="blank">Fragmag</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-</div>
-    <!-- Event Modals -->
-
-    <!-- Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
+                        </span>
+                            <h4 class="service-heading">Intra-College Sports</h4>
+                            <p class="text-muted">Who's gonna lift the class Sports Trophy?</p>
+                        </div>
+                        <div class="col-md-6 animated slideinRight">
+                            <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <a href="athlos.html">
+                                <i class="fa fa-futbol-o fa-stack-1x fa-inverse animated infinite tada"></i>
+                            </a>
+                        </span>
+                            <h4 class="service-heading">Inter-College Sports</h4>
+                            <p class="text-muted">Game On!</p>
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <!-- Team -->
+            <section class="bg-faded" id="team" name="team">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-8 offset-lg-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Yoga Day</h2>
-                                <p class="item-intro text-muted">Breathe in, Breathe out</p>
-                                <img class="img-fluid d-block mx-auto" src="img/activities/yogaday-full.jpg" alt="yogaday">
-                                <p>The International Yoga Day was celebrated on 21st June at Fr. Conceicao Rodrigues college
-                                    of engineering as an attempt to bring peace, harmony, happiness and success. This was
-                                    a great opportunity to imbibe the value of discipline. Yoga is a mental, physical and
-                                    spiritual practice that needs to be carried every day. The event was attended by 30 participants
-                                    including our Principal, professors and the students. The duration of the event was two
-                                    hours, from 10:00 am to 12:00 pm. The event was conducted in the school auditorium of
-                                    Fr. Agnel School, Bandstand, Bandra (West).</p>
-                                <p>The event began with the Cultural Secretary Ms.Suparna Shetty giving a brief introduction
-                                    about yoga and introducing the yoga instructor Mrs. Charu Doshi. The students' council
-                                    then welcomed her with a bouquet of flowers. All the people present got the chance to
-                                    know how yoga embodies unity of mind and body. Different yoga postures were explained
-                                    and demonstrated by Mrs. Charu Joshi like:- ● Vrikshasana, ● Uttaanaasana, ● Trikonaasana,
-                                    ● Bhadrasana, ● Shashankaasana, ● Bhujangasana, ● Pawana Muktaasana, ● Finally ended
-                                    with Pranayama and meditation Prayers were recited before and after the programme. The
-                                    staff and the students had a peaceful session. The audience showed great interest and
-                                    participated in various asnas with full cooperation.
-                                </p>
-                                <p>
-                                    The event was concluded with the council presenting Mrs. Charu Doshi with a small memento and a small talk by the Principal.
-                                </p>
-                                <ul class="list-inline">
-                                    <li>Date: 21st June 2017</li>
-                                    <li>Venue: School Auditorium</li>
-                                </ul>
-                                <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i>Close</button>
-                            </div>
+                        <div class="col-lg-12 text-center">
+                            <h2 class="section-heading">Our Team</h2>
+                            <h3 class="section-subheading text-muted">Guided By..</h3>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
                     <div class="row">
-                        <div class="col-lg-8 offset-lg-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Friendship Day</h2>
-                                <p class="item-intro text-muted">Friends make college life fun, don't they ?</p>
-                                <img class="img-fluid d-block mx-auto" src="img/activities/frday-thumb.jpg" alt="frday">
-                                <p>
-                                    True friends will not have any reason for their friendship. So it can never be broken when they don't find that reason.<br>                                    Let's celebrate together and enjoy the many games and events including favourites like
-                                    the Class Selfie and Fishpond!<br> Events start at <strong> 4:30 pm </strong> and here
-                                    are the details about all the games.<br><br>
-                                    <a href="files/frday.pdf" target="blank">Game Details</a>
-                                </p>
-                                <ul class="list-inline">
-                                    <li>Date: 4th August 2017</li>
-                                </ul>
-                                <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i>Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 offset-lg-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Humans Of Crce</h2>
-                                <p class="item-intro text-muted">The voice of every student!</p>
-                                <img class="img-fluid d-block mx-auto" src="img/activities/hoc-full.png" alt="hoc">
-                                <p>
-                                    Humans Of CRCE catalogs the significant moments of our college, one story at a time!
-                                </p>
-                                <ul class="list-inline">
-                                    <li>
-                                        <h5><a href="https://www.facebook.com/humansofcrce/">Facebook Page</a></h5>
+                        <div class="col-sm-6">
+                            <div class="team-member animated fadeInLeft">
+                                <img class="mx-auto rounded-circle" src="img/team/Jerry.jpg" alt="Jerry">
+                                <h4>Jeremiah D'souza</h4>
+                                <p class="text-muted">President<br>BE Computers</p>
+                                <ul class="list-inline social-buttons">
+                                    <li class="list-inline-item">
+                                        <a href="https://www.facebook.com/Jerry.18d" target="blank"><i class="fa fa-facebook"></i></a>
                                     </li>
                                 </ul>
-                                <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i>Close</button>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="team-member animated fadeInRight">
+                                <img class="mx-auto rounded-circle" src="img/team/RyanF.png" alt="RyanF">
+                                <h4>Ryan Furtado</h4>
+                                <p class="text-muted">General Secretary<br>TE Computers</p>
+                                <ul class="list-inline social-buttons">
+                                    <li class="list-inline-item">
+                                        <a href="https://www.facebook.com/ryan.furtado2" target="blank"><i class="fa fa-facebook"></i></a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2 text-center">
+                        <p class="large text-muted">But it takes a lot more than just indiviuals!</p>
+                        <a href="aboutus.html" class="btn btn-xl animated infinite tada">Know our entire team!</a>
                     </div>
                 </div>
+
+            </section>
+
+            <!-- Contact -->
+            <section id="contact" name="contact">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-8 offset-lg-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Snapchat</h2>
-                                <p class="item-intro text-muted">Exciting stories coming your way!</p>
-                                <img class="img-fluid d-block mx-auto" src="img/scid.jpg" alt="SC">
-                                <p>
-                                    <h5><a href="https://www.snapchat.com/add/crcecouncil" target="blank">crcecouncil</a></h5>
-                                </p>
-                                <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i>Close</button>
+                        <div class="col-lg-12 text-center ">
+                            <h2 class="section-heading">Contact Us</h2>
+                            <h3 class="section-subheading text-muted">Drop us a mail at <strong>crce.council@gmail.com</strong><br>
+                                <br><br>Follow us on all platforms!</h3>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-sm-3 col-xs-3">
+                            <ul class="social-icons animated bounceInLeft">
+                                <li>
+                                    <a href="https://www.facebook.com/frcrce.studentscouncil" target="blank">
+                                        <img border="0" alt="Facebook" target="blank" src="img/icons/fb.png" width="75" height="75">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3 col-xs-3">
+                            <ul class="social-icons animated bounceInDown">
+                                <li>
+                                    <a href="https://www.youtube.com/channel/UCYDYa6njIVhimmdVe_UewhQ" target="blank">
+                                        <img border="0" alt="Youtube" target="blank" src="img/icons/yt.png" width="75" height="75">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3 col-xs-3">
+                            <ul class="social-icons animated bounceInUp">
+                                <li>
+                                    <a href="https://www.instagram.com/frcrce_bandra/" target="blank">
+                                        <img border="0" alt="Instragram" target="blank" src="img/icons/ig.png" width="75" height="75">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3 col-xs-3">
+                            <ul class="social-icons animated bounceInRight">
+                                <li>
+                                    <div class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                                        <img border="0" alt="Snapchat" src="img/icons/sc.png" width="75" height="75">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Footer -->
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <span class="copyright">Copyright &copy; Students' Council 2017-2018</span>
+                        </div>
+                        <div class="col-md-4">
+                            <span class="copyright">Designed and Developed by Ryan D'silva</span>
+                        </div>
+                        <div class="col-md-4">
+                            <ul class="list-inline quicklinks">
+                                <li class="list-inline-item">
+                                    <a href="index.html">HOME</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://en.wikipedia.org/wiki/Fr._Conceicao_Rodrigues_Memorial_Debate" target="blank">CRMD</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="intrasports.html">IntraSports</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="http://fragmag2k17.com/" target="blank">Fragmag</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- Event Modals -->
+
+        <!-- Modal 1 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal">
+                        <div class="lr">
+                            <div class="rl">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 offset-lg-2">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here -->
+                                    <h2>Yoga Day</h2>
+                                    <p class="item-intro text-muted">Breathe in, Breathe out</p>
+                                    <img class="img-fluid d-block mx-auto" src="img/activities/yogaday-full.jpg" alt="yogaday">
+                                    <p>The International Yoga Day was celebrated on 21st June at Fr. Conceicao Rodrigues college of engineering as an attempt to bring peace, harmony, happiness and success. This was a great opportunity to imbibe the value of discipline. Yoga is a mental, physical and spiritual practice that needs to be carried every day. The event was attended by 30 participants including our Principal, professors and the students. The duration of the event was two hours, from 10:00 am to 12:00 pm. The event was conducted in the school auditorium of Fr. Agnel School, Bandstand, Bandra (West).</p>
+                                    <p>The event began with the Cultural Secretary Ms.Suparna Shetty giving a brief introduction about yoga and introducing the yoga instructor Mrs. Charu Doshi. The students' council then welcomed her with a bouquet of flowers. All the people present got the chance to know how yoga embodies unity of mind and body. Different yoga postures were explained and demonstrated by Mrs. Charu Joshi like:- ● Vrikshasana, ● Uttaanaasana, ● Trikonaasana, ● Bhadrasana, ● Shashankaasana, ● Bhujangasana, ● Pawana Muktaasana, ● Finally ended with Pranayama and meditation Prayers were recited before and after the programme. The staff and the students had a peaceful session. The audience showed great interest and participated in various asnas with full cooperation.
+                                    </p>
+                                    <p>
+                                        The event was concluded with the council presenting Mrs. Charu Doshi with a small memento and a small talk by the Principal.
+                                    </p>
+                                    <ul class="list-inline">
+                                        <li>Date: 21st June 2017</li>
+                                        <li>Venue: School Auditorium</li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i>Close</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+
+        <!-- Modal 2 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal">
+                        <div class="lr">
+                            <div class="rl">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 offset-lg-2">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here -->
+                                    <h2>Friendship Day</h2>
+                                    <p class="item-intro text-muted">Friends make college life fun, don't they ?</p>
+                                    <img class="img-fluid d-block mx-auto" src="img/activities/frday-thumb.jpg" alt="frday">
+                                    <p>
+                                        True friends will not have any reason for their friendship. So it can never be broken when they don't find that reason.<br> Let's celebrate together and enjoy the many games and events including favourites like the Class Selfie and Fishpond!<br> Events start at <strong> 4:30 pm </strong> and here are the details about all the games.<br><br>
+                                        <a href="files/frday.pdf" target="blank">Game Details</a>
+                                    </p>
+                                    <ul class="list-inline">
+                                        <li>Date: 4th August 2017</li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i>Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 3 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal">
+                        <div class="lr">
+                            <div class="rl">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 offset-lg-2">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here -->
+                                    <h2>Humans Of Crce</h2>
+                                    <p class="item-intro text-muted">The voice of every student!</p>
+                                    <img class="img-fluid d-block mx-auto" src="img/activities/hoc-full.png" alt="hoc">
+                                    <p>
+                                        Humans Of CRCE catalogs the significant moments of our college, one story at a time!
+                                    </p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <h5><a href="https://www.facebook.com/humansofcrce/">Facebook Page</a></h5>
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i>Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 4 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal">
+                        <div class="lr">
+                            <div class="rl">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 offset-lg-2">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here -->
+                                    <h2>Snapchat</h2>
+                                    <p class="item-intro text-muted">Exciting stories coming your way!</p>
+                                    <img class="img-fluid d-block mx-auto" src="img/scid.jpg" alt="SC">
+                                    <p>
+                                        <h5><a href="https://www.snapchat.com/add/crcecouncil" target="blank">crcecouncil</a></h5>
+                                    </p>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i>Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/tether/tether.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/tether/tether.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+        <!-- Plugin JavaScript -->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/agency.min.js"></script>
-    <script type="text/javascript">
-        var images = new Array();
+        <!-- Custom scripts for this template -->
+        <script src="js/agency.min.js"></script>
+        <script type="text/javascript">
+            var images = new Array();
 
-        function preloadImages() {
+            function preloadImages() {
 
-            for (i = 0; i < preloadImages.arguments.length; i++) {
+                for (i = 0; i < preloadImages.arguments.length; i++) {
 
-                images[i] = new Image();
+                    images[i] = new Image();
 
-                images[i].src = preloadImages.arguments[i];
+                    images[i].src = preloadImages.arguments[i];
+
+                }
 
             }
 
-        }
+            preloadImages("img/header-bg.jpg");
 
-        preloadImages("img/header-bg.jpg");
+        </script>
+        <script>
+            var myVar;
 
-    </script>
-    <script>
-        var myVar;
+            function myFunction() {
+                myVar = setTimeout(showPage, 3000);
+            }
 
-        function myFunction() {
-            myVar = setTimeout(showPage, 3000);
-        }
+            function showPage() {
+                document.getElementById("loader").style.display = "none";
+                document.getElementById("myDiv").style.display = "block";
+            }
 
-        function showPage() {
-            document.getElementById("loader").style.display = "none";
-            document.getElementById("myDiv").style.display = "block";
-        }
+        </script>
 
-    </script>
+    </body>
 
-</body>
-
-</html>
+    </html>
