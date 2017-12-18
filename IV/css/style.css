@@ -6,7 +6,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 body{
 	margin:0;
-	font-family: 'Sedgwick Ave', cursive;
+	font-family: 'Montserrat', sans-serif;
 	background: #fff;
 }
 body a{
@@ -64,7 +64,6 @@ body a:hover{
     text-transform: uppercase;
     font-weight: 700; 
     text-shadow: 3px 2px 0px #fff;
-	font-family: 'Dancing Script', cursive;
 }
 .logo h1 a,.logo h1 a:hover{
     color: #FFFFFF;
@@ -298,7 +297,6 @@ p {
     font-weight: 700;
     margin-bottom: 0.5em;
     text-transform: capitalize;
-	font-family: 'Dancing Script', cursive;
 }
 .welcome-w3lleft h5 {
     color: #333;
@@ -500,7 +498,6 @@ h3.w3agileits-title{
     font-size: 3em;
     font-weight: 700; 
     text-transform: capitalize;
-	font-family: 'Dancing Script', cursive;
 	text-align:center;
 	margin-bottom: 1em;
 }
